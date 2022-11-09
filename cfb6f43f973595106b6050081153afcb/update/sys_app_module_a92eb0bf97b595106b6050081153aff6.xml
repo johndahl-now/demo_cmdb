@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Demo CMDB">7507bc3f973595106b6050081153afcd</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Studio</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>10000</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>/$studio.do?sysparm_transaction_scope=cfb6f43f973595106b6050081153afcb&amp;sysparm_nostack=true</query>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-14 11:53:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a92eb0bf97b595106b6050081153aff6</sys_id>
+        <sys_name>Studio</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope>
+        <sys_update_name>sys_app_module_a92eb0bf97b595106b6050081153aff6</sys_update_name>
+        <timeline_page/>
+        <title>Studio</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name>Studio</window_name>
+    </sys_app_module>
+</record_update>

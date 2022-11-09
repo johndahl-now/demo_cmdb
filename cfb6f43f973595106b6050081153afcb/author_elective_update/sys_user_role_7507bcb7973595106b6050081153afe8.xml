@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_803922_demo_cmdb.widget_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>widget_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-14 11:21:45</sys_created_on>
+        <sys_id>7507bcb7973595106b6050081153afe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_803922_demo_cmdb.widget_user</sys_name>
+        <sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope>
+        <sys_update_name>sys_user_role_7507bcb7973595106b6050081153afe8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-14 11:21:45</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</application>
+        <file_path/>
+        <instance_id>fea09001db5a1300ff27d5b0cf961905</instance_id>
+        <instance_name>dev60079</instance_name>
+        <name>sys_user_role_7507bcb7973595106b6050081153afe8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_803922_demo_cmdb.widget_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>widget_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-14 11:21:45</sys_created_on><sys_id>7507bcb7973595106b6050081153afe8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_803922_demo_cmdb.widget_user</sys_name><sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package><sys_policy/><sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope><sys_update_name>sys_user_role_7507bcb7973595106b6050081153afe8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-14 11:21:45</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>931355786</payload_hash>
+        <record_name>x_803922_demo_cmdb.widget_user</record_name>
+        <reverted_from/>
+        <source>03b6f43f973595106b6050081153afce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-14 11:21:45</sys_created_on>
+        <sys_id>b507bcb7973595106b6050081153afec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1833bbbc57b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-14 11:21:45</sys_updated_on>
+        <type>Role</type>
+        <update_guid>fd07bcb7f5359510ab025ed8ae0ff0eb</update_guid>
+        <update_guid_history>fd07bcb7f5359510ab025ed8ae0ff0eb:931355786</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_803922_demo_cmdb.widget_user">3ef2092397965d106b6050081153af15</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>john.dahl</sys_created_by>
+        <sys_created_on>2022-10-08 14:06:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>df58c1b7b03e45b59a7dedcde78435d1</sys_id>
+        <sys_metadata>7507bcb7973595106b6050081153afe8</sys_metadata>
+        <sys_name>x_803922_demo_cmdb.widget_user</sys_name>
+        <sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope>
+        <sys_scope_delete display_value="">39476cb9ccf74c5d93e5d5c3f1f55349</sys_scope_delete>
+        <sys_update_name>sys_user_role_7507bcb7973595106b6050081153afe8</sys_update_name>
+        <sys_update_version display_value="sys_user_role_7507bcb7973595106b6050081153afe8">b507bcb7973595106b6050081153afec</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

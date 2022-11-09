@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7181c96f97565d106b6050081153af6a" extends="cmdb_ci" label="Thingamabob" max_length="40" name="x_803922_demo_cmdb_thingamabob" type="collection">
+        <element label="Same field" max_length="40" name="same_field" type="string"/>
+        <element label="Different field2" max_length="40" name="different_field2" type="string"/>
+    </element>
+</database>

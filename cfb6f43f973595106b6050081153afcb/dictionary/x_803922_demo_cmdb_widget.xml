@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8bc6b83f973595106b6050081153af30" extends="cmdb_ci" label="Widget" max_length="40" name="x_803922_demo_cmdb_widget" type="collection">
+        <element label="Same field" max_length="40" name="same_field" type="string"/>
+        <element label="Different field1" max_length="40" name="different_field1" type="string"/>
+    </element>
+</database>

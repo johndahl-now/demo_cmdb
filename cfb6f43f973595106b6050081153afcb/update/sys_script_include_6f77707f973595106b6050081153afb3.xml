@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_803922_demo_cmdb.Util</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Util</name>
+        <script><![CDATA[var Util = Class.create();
+Util.prototype = {
+	
+	getTables: function( tableName ){
+		return global.j2js( new global.TableUtils( tableName ).getTables() );
+	},
+	
+	getFields: function( tableName ){
+		var tables = this.getTables( tableName );
+		var query = 'internal_type!=collection^ORinternal_type=NULL^nameIN' + tables;
+
+		return new global.GlideQuery.parse( 'sys_dictionary', query )
+			.select( 'element' )
+			.reduce( function( arr, rec ){
+				arr.push( rec.element );
+				return arr;
+			}, [] )
+			.sort();
+		
+	},
+
+	
+	convert_appl: function( grAppl ){
+		/* Given a GlideRecord for a record in the cmdb_ci_appl table,
+	   * Reclassify the record to the cmdb_ci_service_calculated table, then
+	   * Convert the record to a Calculated Application Service so that the
+	   * Service CI Association is automatically synchronized with the CMDB updates.
+	   */
+
+		var converted, grService,
+			sys_id = grAppl.getUniqueValue(),
+			op_status = grAppl.getValue( 'operational_status' );
+
+		try{
+			// Reclass the Application to a Calculated Application Service
+			grAppl.setValue( 'sys_class_name', 'cmdb_ci_service_calculated' );
+			grAppl.update();
+		}
+		catch( e ){
+			gs.error( 'JD: Unable to reclass the application.\n' + e.name + ': ' + e.message );
+			return e;
+		}
+
+		try{
+			// Convert the Calculated Application Service
+			convertor = new CreateOrUpdateITService();
+			convertor.convertManualToDynamicService( sys_id );
+		}
+		catch( e ){
+			gs.error( 'JD: Unable to convert the mapped application service.\n' + e.name + ': ' + e.message );
+			return e;
+		}
+
+		// Check if the entry point exists
+		var grEntryPoint = new GlideRecord( 'sa_m2m_service_entry_point' );
+		grEntryPoint.addQuery( 'cmdb_ci_service', sys_id );
+		grEntryPoint.query();
+		if( grEntryPoint.next() ){
+			this.setOperationalStatus( sys_id, op_status );
+		}
+
+
+	},
+
+	setOperationalStatus: function( sys_id, op_status ){
+		try{
+			// Restore the original operational status
+			var grService = new GlideRecord( 'cmdb_ci_service_calculated' );
+			grService.get( sys_id );
+			grService.setValue( 'operational_status', op_status );
+			grService.update();
+		}
+		catch( e ){
+			gs.error( 'JD: Unable to set the operational status.\n' + e.name + ': ' + e.message );
+			throw( e );
+		}
+
+	},
+
+	getRecords: function( strTableName, strEncodedQuery, arrFields ){
+		
+		return new global.GlideQuery.parse( strTableName, strEncodedQuery )
+		.select( arrFields )
+		.reduce( function( arr, rec ){
+			arr.push( rec );
+			return arr;
+		}, [] );
+		
+	},
+	
+	insertManyRecords: function( strTableName, arrValues ){
+	
+		try{
+			var gqRecords = new global.GlideQuery( strTableName );
+
+			arrValues.forEach( function( record ){
+				gqRecords.insert( record );
+			} );
+		}
+		catch( e ){
+			gs.error( 
+				'An error occurred trying to insert records into ' + strTableName + 
+				'\nValues: \n' + JSON.stringify( arrValues, null, 2 ) + 
+				'\n\nError: ' + e.name + ': ' + e.message 
+			);
+		}
+		
+	},
+	
+	deleteManyRecords: function( strTableName, strEncodedQuery, intPageSize, arrDeletedRecords ){
+	
+		try{
+
+			if( arrDeletedRecords === undefined ){
+				arrDeletedRecords = [];
+			}
+
+			var batchIDs = [],
+				records = new global.GlideQuery.parse( strTableName, strEncodedQuery )
+					.limit( intPageSize )
+					.select( 'name', 'short_description' )
+					.reduce( function( arr, rec ){
+						batchIDs.push( rec.sys_id );
+						arr.push( rec );
+						return arr;
+					}, [] );
+
+
+			if( records.length == 0 ){
+				
+				return arrDeletedRecords;
+			}
+			else{
+				
+				gs.info( 'JD: Deleted ' + records.length + ' records from ' + strTableName );
+				
+				arrDeletedRecords.push( JSON.stringify( records ) );
+
+				new global.GlideQuery.parse( strTableName, 'sys_idIN' + batchIDs )
+					.deleteMultiple();
+			}
+
+			return this.deleteManyRecords( strTableName, strEncodedQuery, intPageSize, arrDeletedRecords );
+		}
+		catch( e ){
+			gs.error( 
+				'ERROR: An error occurred trying to delete records from ' + strTableName + 
+				'\n' + e.name + ': ' + e.message 
+			);
+		}
+		
+	},
+	
+	updateManyRecords: function( strTableName, strEncodedQuery, objValues ){
+	
+		try{
+	
+			return new global.GlideQuery.parse( strTableName, strEncodedQuery )
+			.updateMultiple( objValues );
+		
+		}
+		catch( e ){
+			gs.error( 
+				'An error occurred trying to update records in ' + strTableName + 
+				'\nQuery: ' + strEncodedQuery + 
+				'\nValues: \n' + JSON.stringify( objValues, null, 2 ) + 
+				'\n\nError: ' + e.name + ': ' + e.message 
+			);
+		}
+		
+	},
+	
+    initialize: function() {
+    },
+    type: 'Util',
+	
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-14 11:23:56</sys_created_on>
+        <sys_id>6f77707f973595106b6050081153afb3</sys_id>
+        <sys_name>Util</sys_name>
+        <sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope>
+        <sys_update_name>sys_script_include_6f77707f973595106b6050081153afb3</sys_update_name>
+    </sys_script_include>
+</record_update>

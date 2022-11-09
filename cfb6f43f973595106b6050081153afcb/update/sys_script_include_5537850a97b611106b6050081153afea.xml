@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_803922_demo_cmdb.UtilsAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>UtilsAjax</name>
+        <script><![CDATA[var UtilsAjax = Class.create();
+UtilsAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	completeReclassificationTasks: function( taskIds ){
+		var grCi, grTask;
+		
+		taskIds = taskIds || this.getParameter( 'sysparm_sysids' );
+		
+		grTask = new GlideRecord( 'reclassification_task' );
+		grTask.addEncodedQuery( 'active=true^sys_idIN' + taskIds.split(',') );
+		grTask.query();
+		while( grTask.next() ){
+			
+			// Reclass the Configuration Item
+			try{
+				grCi = grTask.cmdb_ci.getRefRecord();
+				grCi.setValue( 'sys_class_name', grTask.getValue( 'reclassification_class' ) );
+				grCi.update();
+			}
+			catch( e ){
+				gs.error( 'Reclassification Failed for ' + grCi.name + '\nError: ' + e.name + ': ' + e.message );
+				throw e;
+			}
+			
+			// Close the Reclassification Task
+			try{
+				grTask.setValue( 'state', 3 ); // Closed Complete
+				grTask.update();
+			}
+			catch( e ){
+				gs.error( 'Reclassification Task update failed to close ' + grTask.number + '\nError: ' + e.name + ': ' + e.message );
+				throw e;
+			}
+		}
+	},
+
+    type: 'UtilsAjax',
+	
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>john.dahl</sys_created_by>
+        <sys_created_on>2022-10-28 19:06:38</sys_created_on>
+        <sys_id>5537850a97b611106b6050081153afea</sys_id>
+        <sys_name>UtilsAjax</sys_name>
+        <sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope>
+        <sys_update_name>sys_script_include_5537850a97b611106b6050081153afea</sys_update_name>
+    </sys_script_include>
+</record_update>
