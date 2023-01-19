@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_803922_demo_cmdb_subwidget">x_803922_demo_cmdb_subwidget</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>SUB</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>john.dahl</sys_created_by>
+        <sys_created_on>2023-01-19 14:48:53</sys_created_on>
+        <sys_id>1a58ebe82fe06510b77fd5ccf699b674</sys_id>
+        <sys_name>SUB</sys_name>
+        <sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope>
+        <sys_update_name>sys_number_1a58ebe82fe06510b77fd5ccf699b674</sys_update_name>
+    </sys_number>
+</record_update>

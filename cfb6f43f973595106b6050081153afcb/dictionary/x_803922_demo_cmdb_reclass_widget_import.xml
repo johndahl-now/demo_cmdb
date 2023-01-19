@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="65ac48ec2f902510b77fd5ccf699b6d8" extends="sys_import_set_row" label="Reclass Widget Import" max_length="40" name="x_803922_demo_cmdb_reclass_widget_import" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Application Service" label="Application Service" max_length="255" name="u_application_service" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Business Application" label="Business Application" max_length="255" name="u_business_application" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Operational status" label="Operational status" max_length="255" name="u_operational_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Original Application Name" label="Original Application Name" max_length="255" name="u_original_application_name" type="string"/>
+    </element>
+</database>
