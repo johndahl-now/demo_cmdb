@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c686ea392f95a110b77fd5ccf699b65a" label="Attribute Model" max_length="40" name="x_803922_demo_cmdb_attribute_model" type="collection">
+        <element label="Label" max_length="255" name="label" type="string"/>
+    </element>
+</database>

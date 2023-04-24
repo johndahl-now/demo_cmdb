@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="30c56e392f95a110b77fd5ccf699b63b" label="Class Model" max_length="40" name="x_803922_demo_cmdb_class_model" type="collection">
+        <element label="Class Reference" max_length="32" name="class_reference" reference="cmdb_ci" type="reference"/>
+        <element label="Comments" max_length="4000" name="comments" type="string"/>
+        <element label="Label" max_length="255" name="label" type="string"/>
+        <element label="Menu" max_length="40" name="menu" type="boolean"/>
+        <element label="Name" max_length="255" name="name" type="string"/>
+        <element label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="class_reference"/>
+        </index>
+        <index name="index2">
+            <element name="owner"/>
+        </index>
+    </element>
+</database>
