@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Demo CMDB">40d141af97565d106b6050081153affa</application>
+        <filter/>
+        <name>Attribute Models</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_803922_demo_cmdb.user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>john.dahl</sys_created_by>
+        <sys_created_on>2023-03-01 14:01:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>39a62e792f95a110b77fd5ccf699b619</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attribute Models</sys_name>
+        <sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope>
+        <sys_update_name>sys_ui_module_39a62e792f95a110b77fd5ccf699b619</sys_update_name>
+        <sys_updated_by>john.dahl</sys_updated_by>
+        <sys_updated_on>2023-03-01 14:01:20</sys_updated_on>
+        <table>x_803922_demo_cmdb_attribute_model</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</application>
+        <file_path/>
+        <instance_id>5aac432fdbc077408aea21c405961929</instance_id>
+        <instance_name>dev74791</instance_name>
+        <name>sys_ui_module_39a62e792f95a110b77fd5ccf699b619</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Demo CMDB">40d141af97565d106b6050081153affa</application><filter/><name>Attribute Models</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_803922_demo_cmdb.user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>john.dahl</sys_created_by><sys_created_on>2023-03-01 14:01:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>39a62e792f95a110b77fd5ccf699b619</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Attribute Models</sys_name><sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package><sys_policy/><sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope><sys_update_name>sys_ui_module_39a62e792f95a110b77fd5ccf699b619</sys_update_name><sys_updated_by>john.dahl</sys_updated_by><sys_updated_on>2023-03-01 14:01:20</sys_updated_on><table>x_803922_demo_cmdb_attribute_model</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>-429499706</payload_hash>
+        <record_name>Attribute Models</record_name>
+        <reverted_from/>
+        <source>5176e6792f95a110b77fd5ccf699b6f3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>john.dahl</sys_created_by>
+        <sys_created_on>2023-03-01 14:01:20</sys_created_on>
+        <sys_id>f5a62e792f95a110b77fd5ccf699b61b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1869d7a420d0000001</sys_recorded_at>
+        <sys_updated_by>john.dahl</sys_updated_by>
+        <sys_updated_on>2023-03-01 14:01:20</sys_updated_on>
+        <type>Module</type>
+        <update_guid>3da62e79c995a110e13441a59afba51a</update_guid>
+        <update_guid_history>3da62e79c995a110e13441a59afba51a:-429499706</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>john.dahl</sys_created_by>
+        <sys_created_on>2023-07-09 19:59:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>2ca02147700b47599f58c7ea3f51e461</sys_id>
+        <sys_metadata>39a62e792f95a110b77fd5ccf699b619</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attribute Models</sys_name>
+        <sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope>
+        <sys_scope_delete display_value="">39476cb9ccf74c5d93e5d5c3f1f55349</sys_scope_delete>
+        <sys_update_name>sys_ui_module_39a62e792f95a110b77fd5ccf699b619</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_39a62e792f95a110b77fd5ccf699b619">f5a62e792f95a110b77fd5ccf699b61b</sys_update_version>
+        <sys_updated_by>john.dahl</sys_updated_by>
+        <sys_updated_on>2023-07-09 19:59:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

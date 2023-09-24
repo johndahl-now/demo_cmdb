@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Demo CMDB">7507bc3f973595106b6050081153afcd</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Class Models</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_803922_demo_cmdb_class_model</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_803922_demo_cmdb.user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>john.dahl</sys_created_by>
+        <sys_created_on>2023-03-01 14:00:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c5766a392f95a110b77fd5ccf699b650</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Class Models</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope>
+        <sys_update_name>sys_app_module_c5766a392f95a110b77fd5ccf699b650</sys_update_name>
+        <sys_updated_by>john.dahl</sys_updated_by>
+        <sys_updated_on>2023-03-01 14:00:28</sys_updated_on>
+        <timeline_page/>
+        <title>Class Models</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</application>
+        <file_path/>
+        <instance_id>5aac432fdbc077408aea21c405961929</instance_id>
+        <instance_name>dev74791</instance_name>
+        <name>sys_app_module_c5766a392f95a110b77fd5ccf699b650</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Demo CMDB">7507bc3f973595106b6050081153afcd</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Class Models</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_803922_demo_cmdb_class_model</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_803922_demo_cmdb.user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>john.dahl</sys_created_by><sys_created_on>2023-03-01 14:00:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c5766a392f95a110b77fd5ccf699b650</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Class Models</sys_name><sys_overrides/><sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package><sys_policy/><sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope><sys_update_name>sys_app_module_c5766a392f95a110b77fd5ccf699b650</sys_update_name><sys_updated_by>john.dahl</sys_updated_by><sys_updated_on>2023-03-01 14:00:28</sys_updated_on><timeline_page/><title>Class Models</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>55637459</payload_hash>
+        <record_name>Class Models</record_name>
+        <reverted_from/>
+        <source>5176e6792f95a110b77fd5ccf699b6f3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>john.dahl</sys_created_by>
+        <sys_created_on>2023-03-01 14:00:29</sys_created_on>
+        <sys_id>1576e6792f95a110b77fd5ccf699b6f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1869d7978b60000001</sys_recorded_at>
+        <sys_updated_by>john.dahl</sys_updated_by>
+        <sys_updated_on>2023-03-01 14:00:29</sys_updated_on>
+        <type>Module</type>
+        <update_guid>5976e6794195a110d791e7ed63161af4</update_guid>
+        <update_guid_history>5976e6794195a110d791e7ed63161af4:55637459</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Class Models">9c57917b2f332110b77fd5ccf699b6e9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>john.dahl</sys_created_by>
+        <sys_created_on>2023-07-09 19:59:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>3f752de1461e47e492b3cf79dfc04f41</sys_id>
+        <sys_metadata>c5766a392f95a110b77fd5ccf699b650</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Class Models</sys_name>
+        <sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope>
+        <sys_scope_delete display_value="">39476cb9ccf74c5d93e5d5c3f1f55349</sys_scope_delete>
+        <sys_update_name>sys_app_module_c5766a392f95a110b77fd5ccf699b650</sys_update_name>
+        <sys_update_version display_value="sys_app_module_c5766a392f95a110b77fd5ccf699b650">1576e6792f95a110b77fd5ccf699b6f5</sys_update_version>
+        <sys_updated_by>john.dahl</sys_updated_by>
+        <sys_updated_on>2023-07-09 19:59:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

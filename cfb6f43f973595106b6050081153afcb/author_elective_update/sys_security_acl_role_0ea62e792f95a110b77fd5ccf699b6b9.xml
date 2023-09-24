@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>john.dahl</sys_created_by>
+        <sys_created_on>2023-03-01 14:01:21</sys_created_on>
+        <sys_id>0ea62e792f95a110b77fd5ccf699b6b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_803922_demo_cmdb_attribute_model.x_803922_demo_cmdb.user</sys_name>
+        <sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope>
+        <sys_security_acl display_value="x_803922_demo_cmdb_attribute_model">02a62e792f95a110b77fd5ccf699b6b7</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_0ea62e792f95a110b77fd5ccf699b6b9</sys_update_name>
+        <sys_updated_by>john.dahl</sys_updated_by>
+        <sys_updated_on>2023-03-01 14:01:21</sys_updated_on>
+        <sys_user_role display_value="x_803922_demo_cmdb.user" name="x_803922_demo_cmdb.user">84d18d2f97565d106b6050081153af3f</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</application>
+        <file_path/>
+        <instance_id>5aac432fdbc077408aea21c405961929</instance_id>
+        <instance_name>dev74791</instance_name>
+        <name>sys_security_acl_role_0ea62e792f95a110b77fd5ccf699b6b9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>john.dahl</sys_created_by><sys_created_on>2023-03-01 14:01:21</sys_created_on><sys_id>0ea62e792f95a110b77fd5ccf699b6b9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_803922_demo_cmdb_attribute_model.x_803922_demo_cmdb.user</sys_name><sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package><sys_policy/><sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope><sys_security_acl display_value="x_803922_demo_cmdb_attribute_model">02a62e792f95a110b77fd5ccf699b6b7</sys_security_acl><sys_update_name>sys_security_acl_role_0ea62e792f95a110b77fd5ccf699b6b9</sys_update_name><sys_updated_by>john.dahl</sys_updated_by><sys_updated_on>2023-03-01 14:01:21</sys_updated_on><sys_user_role display_value="x_803922_demo_cmdb.user" name="x_803922_demo_cmdb.user">84d18d2f97565d106b6050081153af3f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1511371164</payload_hash>
+        <record_name>x_803922_demo_cmdb_attribute_model.x_803922_demo_cmdb.user</record_name>
+        <reverted_from/>
+        <source>5176e6792f95a110b77fd5ccf699b6f3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>john.dahl</sys_created_by>
+        <sys_created_on>2023-03-01 14:01:21</sys_created_on>
+        <sys_id>82a62e792f95a110b77fd5ccf699b6bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1869d7a46760000001</sys_recorded_at>
+        <sys_updated_by>john.dahl</sys_updated_by>
+        <sys_updated_on>2023-03-01 14:01:21</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>c6a62e79f295a11027aab97ddb9fd6bb</update_guid>
+        <update_guid_history>c6a62e79f295a11027aab97ddb9fd6bb:-1511371164</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_803922_demo_cmdb_attribute_model.x_803922_demo_cmdb.user">3867957b2f332110b77fd5ccf699b696</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>john.dahl</sys_created_by>
+        <sys_created_on>2023-07-09 19:59:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>537d6681ddcc402d9ca5df17c7629e29</sys_id>
+        <sys_metadata>0ea62e792f95a110b77fd5ccf699b6b9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_803922_demo_cmdb_attribute_model.x_803922_demo_cmdb.user</sys_name>
+        <sys_package display_value="Demo cmdb" source="x_803922_demo_cmdb">cfb6f43f973595106b6050081153afcb</sys_package>
+        <sys_parent display_value="">02a62e792f95a110b77fd5ccf699b6b7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Demo cmdb">cfb6f43f973595106b6050081153afcb</sys_scope>
+        <sys_scope_delete display_value="">39476cb9ccf74c5d93e5d5c3f1f55349</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_0ea62e792f95a110b77fd5ccf699b6b9</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_0ea62e792f95a110b77fd5ccf699b6b9">82a62e792f95a110b77fd5ccf699b6bc</sys_update_version>
+        <sys_updated_by>john.dahl</sys_updated_by>
+        <sys_updated_on>2023-07-09 19:59:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
